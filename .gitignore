@@ -1,0 +1,29 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+.env
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# OS/IDE files
+.DS_Store
+.vscode/
+.idea/
+
+# Large checkpoints & generated files
+checkpoints/Ising_DDPM_1_E100.pt
+checkpoints/Ising_DDPM_2_E80.pt
+checkpoints/extract_ema.py
+checkpoints/prune_checkpoints.py
+src/data/*.npz
+data/create_benchmark.py
+figures/*.pdf
+samples/
+results/

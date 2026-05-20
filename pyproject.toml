@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ising-diffusion-2d"
+version = "0.1.0"
+description = "A temperature-conditioned Denoising Diffusion Probabilistic Model (DDPM/DDIM) trained to generate physical 2D Ising spin configurations across the ferromagnetic phase transition, validating thermodynamic fidelity (E, M, Cv, chi, Binder cumulant) against Swendsen-Wang Monte Carlo ground truth."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+authors = [
+    { name = "Jasper Aden" },
+    { name = "Fynn Hufler" },
+]
+keywords = ["diffusion", "ising-model", "generative-model", "physics"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "torch>=2.0.0",
+    "numpy>=1.20.0",
+    "matplotlib>=3.4.0",
+    "tqdm>=4.60.0",
+]
