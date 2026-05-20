@@ -1,0 +1,21 @@
+data:
+  augment: true
+  path: src/data/ising_data_51T_2000configs.npz
+diffusion:
+  beta_end: 0.02
+  beta_start: 1e-4
+  diff_steps: 1000
+  schedule: cosine
+model:
+  architecture: unet_s
+name: Ising_DDPM_1
+training:
+  batch_size: 64
+  checkpoint_every: 5
+  epochs: 100
+  lambda_vlb: 0.001
+  learning_rate: 1e-4
+  num_workers: 0
+  optimizer: adam
+  use_ema: true
+  use_vlb: false

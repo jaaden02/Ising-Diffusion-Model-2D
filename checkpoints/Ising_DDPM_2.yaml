@@ -1,0 +1,22 @@
+name: baseline_a100
+
+data:
+  path: src/data/ising_data_51T_5000configs.npz
+
+model:
+  architecture: UNet_S
+  emb_dim: 256
+
+diffusion:
+  schedule: cosine
+  diff_steps: 1000
+
+training:
+  epochs: 80
+  batch_size: 256
+  learning_rate: 3e-4
+  num_workers: 8
+  use_ema: true
+  use_vlb: false
+  checkpoint_every: 10
+  patience: 30
