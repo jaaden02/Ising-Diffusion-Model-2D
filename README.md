@@ -36,7 +36,7 @@ Generated configurations are binarized ($\text{sign}(x_0)$) and their ensemble s
 ### Key Findings & Summary of Results
 - **First-Moment Fidelity**: Near-perfect agreement in energy per spin ($E/N$) and absolute magnetization per spin ($|M|/N$) across the full temperature range $T \in [1.0, 4.0]$.
 - **Critical Exponent $\eta$**: At the phase transition ($T_c \approx 2.269$), fitting the spatial correlation decay $G(r) \propto r^{-\eta}$ yields a critical exponent of $\eta_{100} = 0.151 \pm 0.018$, compatible with the exact 2D Ising exponent ($\eta = 0.25$) within $1.5\sigma$.
-- **Generalization to Unseen States**: The model successfully interpolates to unobserved temperatures during training with no systematic performance penalty ($\text{MSE}_{\text{unseen}} / \text{MSE}_{\text{seen}} \approx 1.0$).
+- **Generalization to Unseen States**: The model successfully interpolates to unobserved temperatures during training with no systematic performance penalty.
 - **Decisive Sampling**: Continuous-to-discrete binarization errors are negligible (1–2 ambiguous "gray-zone" sites per 64×64 lattice), with stochastic respaced sampling generating more binarization-stable states than deterministic DDIM at equal steps.
 
 > For the detailed mathematical proofs, training dynamics, binarization analysis, and full validation, see the accompanying [Report.pdf](Report.pdf).
